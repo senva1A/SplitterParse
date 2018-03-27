@@ -1,0 +1,10 @@
+My understanding about given business rules
+
+1) First removed double space into one space for given long text.
+
+2) Splitted the given string into 25 character each line
+
+3) Took each 25 character text and check if any comma or dot occurs within first 5 (here i assumed to take first 5 characters)characters of 25 characters.
+
+4) If any comma or dot occurs within first 5 characters of 25 characters, Split by comma or dot (Have assumed that either comma or dot will occur). If the splitted text right side characters length greater than 5, then added the left side text to Tele SMS array. Again right side splitted text will check recursively.
+
