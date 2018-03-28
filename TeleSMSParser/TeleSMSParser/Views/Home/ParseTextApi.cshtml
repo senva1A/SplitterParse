@@ -1,0 +1,21 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "ParseTextApi";
+}
+
+<h2 style="margin-left:200px;">ParseTextApi</h2>
+
+<fieldset>
+    <legend>TELE SMS PARSED Text</legend>
+
+    <div id="divParseText"></div>
+    <ol style="margin-left:200px;">
+        @foreach(var item in Model)
+        {
+            <li>
+                <text>@item.ToString()</text>               
+            </li>
+        }
+    </ol>
+    
+</fieldset>
